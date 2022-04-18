@@ -15,7 +15,7 @@ DEFAULT_PREFERENCE = "1"
 EXTRA_OEMAKE += ' HOSTLDSHARED="${BUILD_CC} -shared ${BUILD_LDFLAGS} ${BUILD_CFLAGS}" '
 
 SRC_URI = " \
-        git://gitlab.denx.de/u-boot.git;branch=master \
+        git://source.denx.de/u-boot/u-boot;protocol=https;branch=master \
         file://armbian-patcher.sh \
         file://patches-${SOC_FAMILY}-${UBOOT_VERSION} \
     "
